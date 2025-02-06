@@ -24,7 +24,7 @@ def create_nasdaq_analysis():
     cur = get_Redshift_connection()
     try:
         drop_table_sql = f"""DROP TABLE IF EXISTS {ANALYTICS_SCHEMA}.{NASDAQ_ANALYSIS_TBL}; """
-        analysis_ctas_sql = f"""
+        profit_table_ctas_sql = f"""
                 CREATE TABLE {ANALYTICS_SCHEMA}.{NASDAQ_ANALYSIS_TBL} AS (
                     SELECT 
                         sp.record_date record_date,
@@ -43,9 +43,9 @@ def create_nasdaq_analysis():
         cur.execute(drop_table_sql)
         cur.execute("COMMIT;")
         cur.execute("BEGIN;")
-        cur.execute(analysis_ctas_sql)
+        cur.execute(profit_table_ctas_sql)
         cur.execute("COMMIT;")
-        logging.info(f"NASDAQ analysis table {ANALYTICS_SCHEMA}.{NASDAQ_ANALYSIS_TBL} created successfully.")
+        logging.info(f"NASDAQ profit table {ANALYTICS_SCHEMA}.{NASDAQ_ANALYSIS_TBL} created successfully.")
     except Exception as e:
         logging.error(f"Error during {ANALYTICS_SCHEMA}.{NASDAQ_ANALYSIS_TBL} table creation: {e}")
         cur.execute("ROLLBACK;")
@@ -56,7 +56,7 @@ def create_nasdaq_volume_table():
         cur = get_Redshift_connection()
 
         drop_table_sql = f"""DROP TABLE IF EXISTS {ANALYTICS_SCHEMA}.{NASDAQ_VOLUME_SECTOR}; """
-        profit_table_ctas = f"""
+        volume_table_ctas_sql = f"""
                             CREATE TABLE {ANALYTICS_SCHEMA}.{NASDAQ_VOLUME_SECTOR} AS (
                                 SELECT  
                                     sp.record_date record_date,
@@ -75,9 +75,9 @@ def create_nasdaq_volume_table():
         cur.execute(drop_table_sql)
         cur.execute("COMMIT;")
         cur.execute("BEGIN;")
-        cur.execute(profit_table_ctas)
+        cur.execute(volume_table_ctas_sql)
         cur.execute("COMMIT;")
-        logging.info(f"NASDAQ profit calculation table {ANALYTICS_SCHEMA}.{NASDAQ_VOLUME_SECTOR} created successfully.")
+        logging.info(f"NASDAQ volume calculation table {ANALYTICS_SCHEMA}.{NASDAQ_VOLUME_SECTOR} created successfully.")
     except Exception as e:
         logging.error(f"Error during {ANALYTICS_SCHEMA}.{NASDAQ_VOLUME_SECTOR} table creation: {e}")
         cur.execute("ROLLBACK;")

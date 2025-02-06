@@ -26,8 +26,7 @@ AWS_SECRET_KEY = Variable.get("aws_project3_secret_key")
 IAM_ROLE = Variable.get('project3_rs_iam')
 
 
-
-BATCH_SIZE = 30 # 한번에 가지고 올 ticker Batch 수
+BATCH_SIZE = 30 # 한번에 수집할 ticker Batch 수
 TICKER_LIST = 'nasdaq_tickers' # Variable에서 가지고 올 Ticker list
 
 # 캐시 및 요청 제한 설정
@@ -43,9 +42,9 @@ def get_Redshift_connection():
     conn = hook.get_conn()
     return conn.cursor()
 
-# 데이터를 가지고 오기 위한 시작일 마지막일 계산
+# 데이터를 가지고 오기 위한 시작일,마지막일 계산
 def get_execution_date_range(input_date):
-    input_date = input_date[:10]
+    input_date = input_date[:10] #입력받은 string에서 년,월,일 까지만 추출
     input_date = datetime.strptime(input_date, '%Y-%m-%d')
     if input_date.weekday() in [3,4]:  # Thursday,Friday
         start_date = input_date - timedelta(days=3)
