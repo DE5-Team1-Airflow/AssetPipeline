@@ -19,7 +19,7 @@ def get_Redshift_connection():
     return conn.cursor()
 
 
-def create_nasdaq_analysis():
+def create_nasdaq_profit_analysis():
     #Redshift에 연결
     cur = get_Redshift_connection()
     try:
@@ -37,7 +37,7 @@ def create_nasdaq_analysis():
                     JOIN raw_data.weight wi ON wi.ticker = st.ticker
                     WHERE wi.ticker_type = 'NASDAQ');
                     """
-        logging.info("Creating Redshift table for NASDAQ analysis....")
+        logging.info("Creating Redshift table for NASDAQ profit analysis....")
 
         cur.execute("BEGIN;")
         cur.execute(drop_table_sql)
@@ -70,7 +70,7 @@ def create_nasdaq_volume_table():
                                 JOIN raw_data.weight wi ON wi.ticker = st.ticker
                                 WHERE wi.ticker_type = 'NASDAQ');
                             """
-        
+        logging.info("Creating Redshift table for NASDAQ trade volume analysis....")
         cur.execute("BEGIN;")
         cur.execute(drop_table_sql)
         cur.execute("COMMIT;")
@@ -102,10 +102,10 @@ with DAG(
     tags=["nasdaq", "s3", "redshift","elt"],
 ) as dag:
 
-    #nasdaq 분석을 위한 table 생성 Task
-    nasdaq_analysis_table_task = PythonOperator(
-        task_id="create_nasdaq_analysis_table",
-        python_callable=create_nasdaq_analysis,
+    #nasdaq 이익 분석을 위한 table 생성 Task
+    nasdaq_profit_analysis_table_task = PythonOperator(
+        task_id="create_nasdaq_profit_analysis_table",
+        python_callable=create_nasdaq_profit_analysis,
     )
 
     #거래량 분석을 위한 table 생성 Task
@@ -116,4 +116,4 @@ with DAG(
 
     create_analysis_table = DummyOperator(task_id="create_tables_for_analysis_schema")
 
-create_analysis_table >> [nasdaq_analysis_table_task,nasdaq_volume_table_task]
+create_analysis_table >> [nasdaq_profit_analysis_table_task,nasdaq_volume_table_task]

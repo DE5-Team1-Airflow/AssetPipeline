@@ -1,0 +1,102 @@
+Holding Ticker,Name,MarketValue,Sector
+AAPL ,Apple Inc,31589133163.92,Information Technology
+NVDA ,NVIDIA Corp,27088912601.1,Information Technology
+MSFT ,Microsoft Corp,26655874272.8,Information Technology
+AMZN ,Amazon.com Inc,19421063102.04,Consumer Discretionary
+AVGO ,Broadcom Inc,13967982492.6,Information Technology
+TSLA ,Tesla Inc,12542072956.12,Consumer Discretionary
+META ,Meta Platforms Inc,10476911985.25,Communication Services
+GOOGL ,Alphabet Inc,9184080726.36,Communication Services
+GOOG ,Alphabet Inc,8768829666.24,Communication Services
+COST ,Costco Wholesale Corp,8540274600.91,Consumer Staples
+NFLX ,Netflix Inc,7850496711.75,Communication Services
+TMUS ,T-Mobile US Inc,5165236025.79,Communication Services
+CSCO ,Cisco Systems Inc,4708732973.56,Information Technology
+PEP ,PepsiCo Inc,4235077529.1,Consumer Staples
+LIN ,Linde PLC,4081784126.96,Materials
+ADBE ,Adobe Inc,3976843791.2,Information Technology
+AMD ,Advanced Micro Devices Inc,3908368038.12,Information Technology
+ISRG ,Intuitive Surgical Inc,3773742165.99,Health Care
+INTU ,Intuit Inc,3638472105.62,Information Technology
+PLTR ,Palantir Technologies Inc,3548691065.25,Information Technology
+TXN ,Texas Instruments Inc,3443922346.83,Information Technology
+QCOM ,QUALCOMM Inc,3431697081.7,Information Technology
+BKNG ,Booking Holdings Inc,3375754849.27,Consumer Discretionary
+HON ,Honeywell International Inc,2999427510.72,Industrials
+CMCSA ,Comcast Corp,2947403025.84,Communication Services
+AMGN ,Amgen Inc,2860246749.36,Health Care
+AMAT ,Applied Materials Inc,2724662284.47,Information Technology
+PANW ,Palo Alto Networks Inc,2476180936.68,Information Technology
+ADP ,Automatic Data Processing Inc,2420328537.0,Industrials
+GILD ,Gilead Sciences Inc,2330755786.42,Health Care
+ADI ,Analog Devices Inc,2123451137.52,Information Technology
+VRTX ,Vertex Pharmaceuticals Inc,2066941384.01,Health Care
+APP ,AppLovin Corp,2057528545.15,Information Technology
+MU ,Micron Technology Inc,2028331560.96,Information Technology
+SBUX ,Starbucks Corp,2015054719.26,Consumer Discretionary
+MRVL ,Marvell Technology Inc,1958231648.4,Information Technology
+LRCX ,Lam Research Corp,1866173440.26,Information Technology
+PYPL ,PayPal Holdings Inc,1764756200.57,Financials
+MELI ,MercadoLibre Inc,1762059806.04,Consumer Discretionary
+CRWD ,Crowdstrike Holdings Inc,1711637655.84,Information Technology
+INTC ,Intel Corp,1700885487.04,Information Technology
+KLAC ,KLA Corp,1700776760.76,Information Technology
+CDNS ,Cadence Design Systems Inc,1670425674.45,Information Technology
+MDLZ ,Mondelez International Inc,1604440508.09,Consumer Staples
+MAR ,Marriott International Inc/MD,1594230948.8,Consumer Discretionary
+REGN ,Regeneron Pharmaceuticals Inc,1532409464.1,Health Care
+SNPS ,Synopsys Inc,1527459958.44,Information Technology
+CTAS ,Cintas Corp,1523157396.54,Industrials
+FTNT ,Fortinet Inc,1504952258.79,Information Technology
+CEG ,Constellation Energy Corp,1434499197.46,Utilities
+ORLY ,O'Reilly Automotive Inc,1421888223.63,Consumer Discretionary
+MSTR ,MicroStrategy Inc,1346530801.8,Information Technology
+DASH ,DoorDash Inc,1343818035.0,Consumer Discretionary
+PDD ,PDD Holdings Inc ADR,1342801373.85,Consumer Discretionary
+ADSK ,Autodesk Inc,1294927149.28,Information Technology
+ASML ,ASML Holding NV,1264591967.92,Information Technology
+CSX ,CSX Corp,1240871095.1,Industrials
+WDAY ,Workday Inc,1174956376.56,Information Technology
+ABNB ,Airbnb Inc,1173720805.05,Consumer Discretionary
+ROP ,Roper Technologies Inc,1138200290.0,Information Technology
+TTD ,Trade Desk Inc/The,1135638218.79,Communication Services
+CPRT ,Copart Inc,1133319893.42,Industrials
+PCAR ,PACCAR Inc,1115596096.76,Industrials
+NXPI ,NXP Semiconductors NV,1079520168.96,Information Technology
+MNST ,Monster Beverage Corp,1016184836.64,Consumer Staples
+PAYX ,Paychex Inc,1014597991.26,Industrials
+CHTR ,Charter Communications Inc,1009793418.0,Communication Services
+ROST ,Ross Stores Inc,999692342.55,Consumer Discretionary
+AEP ,American Electric Power Co Inc,997935741.25,Utilities
+AXON ,Axon Enterprise Inc,973165821.75,Industrials
+DDOG ,Datadog Inc,945761208.3,Information Technology
+FANG ,Diamondback Energy Inc,913999891.58,Energy
+LULU ,Lululemon Athletica Inc,901917764.32,Consumer Discretionary
+KDP ,Keurig Dr Pepper Inc,887081366.73,Consumer Staples
+FAST ,Fastenal Co,865968475.68,Industrials
+TEAM ,Atlassian Corp,839153564.14,Information Technology
+BKR ,Baker Hughes Co,806052723.84,Energy
+CTSH ,Cognizant Technology Solutions Corp,793657764.51,Information Technology
+VRSK ,Verisk Analytics Inc,789847803.08,Industrials
+EA ,Electronic Arts Inc,783147416.6,Communication Services
+ODFL ,Old Dominion Freight Line Inc,782301588.67,Industrials
+XEL ,Xcel Energy Inc,781934697.0,Utilities
+AZN ,AstraZeneca PLC ADR,768794194.95,Health Care
+EXC ,Exelon Corp,751530137.04,Utilities
+KHC ,Kraft Heinz Co/The,745571767.64,Consumer Staples
+GEHC ,GE HealthCare Technologies Inc,728355397.64,Health Care
+CCEP ,Coca-Cola Europacific Partners PLC,699147600.62,Consumer Staples
+IDXX ,IDEXX Laboratories Inc,682008314.16,Health Care
+TTWO ,Take-Two Interactive Software Inc,645665954.0,Communication Services
+DXCM ,Dexcom Inc,631611487.92,Health Care
+MCHP ,Microchip Technology Inc,602239980.16,Information Technology
+ANSS ,ANSYS Inc,597833203.38,Information Technology
+CSGP ,CoStar Group Inc,591695441.84,Real Estate
+ZS ,Zscaler Inc,580816726.74,Information Technology
+ON ,ON Semiconductor Corp,563456152.0,Information Technology
+WBD ,Warner Bros Discovery Inc,529810158.03,Communication Services
+CDW ,CDW Corp/DE,469893053.02,Information Technology
+GFS ,GLOBALFOUNDRIES Inc,465815439.88,Information Technology
+BIIB ,Biogen Inc,431202846.49,Health Care
+MDB ,MongoDB Inc,366574527.55,Information Technology
+ARM ,ARM Holdings PLC ADR,341958079.65,Information Technology
